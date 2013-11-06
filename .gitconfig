@@ -1,0 +1,27 @@
+[user]
+	name = Raul E Rangel
+	email = Raul@kapost.com
+[merge]
+	tool = diffmerge
+[color]
+	ui = true
+[core]
+	autocrlf = false
+[help]
+	autocorrect = 1
+[push]
+	default = simple
+[alias]
+	diffadd = "!cd \"$GIT_PREFIX\"; diffadd"
+[mergetool]
+	prompt = false
+	keepBackup = false
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustExitCode = true
+[difftool "diffmerge"]
+	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[difftool "pdiff"]
+	cmd = imgdiff \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = diffmerge

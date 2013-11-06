@@ -1,0 +1,3 @@
+export KAPOST_NAME="Raul E Rangel"
+export KAPOST_PASSWORD=password
+export KAPOST_EMAIL=raul@kapost.com
