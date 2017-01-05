@@ -1,4 +1,3 @@
-
 function ff() {
   if [ -z "$2" ]; then
     grep --color=auto --exclude "*\.git*" -I -r -i "$1" .
